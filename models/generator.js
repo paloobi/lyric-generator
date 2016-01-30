@@ -41,13 +41,13 @@ function getLine() {
     return word;
   });
 
-  return phrase.join(" ") + "\n";
+  return phrase.join(" ");
 }
 
 function getPoem(length) {
-  var poem = "";
+  var poem = [];
   for (var i = 0 ; i < length; i++) {
-    poem += getLine();
+    poem.push(getLine());
   }
   return poem;
 }

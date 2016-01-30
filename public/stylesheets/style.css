@@ -131,3 +131,7 @@ label {
 	height:40px;
 	border-radius: 12px
 }
+
+.homeLink {
+	padding-top: 0;
+}

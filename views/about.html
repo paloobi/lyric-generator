@@ -1,9 +1,14 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<div class="pull-right">
+  <a href="/"><h3 class="homeLink">Home</h3></a>
+</div>
+
 <div id="content" class="box">
 
-  <h1 class="about">About</h1>
+
+  <h1 class="about">About</h1> 
 
   {% autoescape false %}{{readMe}}{% endautoescape %}
 

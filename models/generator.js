@@ -23,7 +23,8 @@ var phrasePatterns = [
   ["you", "t", "D", "h"],
   ["ex", "ex"],
   ['v','obj','i','P','D','A','N'],
-  ['obj',"V","A"]
+  ['obj',"V","A"],
+  ['ex','obj']
 ];
 
 function getRandomPattern() {

@@ -5,7 +5,7 @@ var marked = require('marked');
 var path = require('path');
 
 router.get('/', function(req, res){
-	res.render('index');
+	res.render('index', {value: 12});
 });
 
 router.get('/about', function(req, res){
@@ -26,10 +26,18 @@ router.post('/generate', function(req, res, next) {
   res.render('index',{poem:poem});
 });
 
-router.post('/save',function(req,res,next){
+router.post('/lyrics.txt',function(req,res,next){
 	console.log(poem);
-	fs.writeFile(path.join(__dirname,'../public/','./poem.txt'),poem.join(', '));
-	res.setHeader('Content-disposition', 'attachment; filename=dramaticpenguin.MOV');
-	res.sendFile(path.join(__dirname,'../public/','./poem.txt'));
+	fs.writeFile(path.join(__dirname,'../public/lyrics.md'), poem.join(',\n').slice(0, -2), function(err, file) {
+		if (err) throw err;
+		res.sendFile(path.join(__dirname,'../public/','./lyrics.md'), function(err) {
+			fs.unlink('../public/lyrics.md', function(err) {
+	  		if (err) throw err;
+	  		console.log('successfully deleted poem');
+			});
+		});
+
+	});
+
 });
 module.exports = router;

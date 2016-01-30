@@ -98,13 +98,15 @@ form {
 }
 
 .btn-danger:hover {
-	background-color: gray;
-	border-color: gray;
+	background-color: violet;
+	border-color: violet;
+	color: black;
 }
 
 .btn-danger {
 	font-family: sans-serif;
 	font-size: 20px;
+	border: none;
 }
 
 .lines input {
@@ -117,4 +119,10 @@ label {
 	color: black;
 	font-family: sans-serif;
 	margin-top: 12px;
+}
+
+.controller {
+	background-color: rgb(102, 0, 102);
+	border-radius: 12px;
+	padding: 20px;
 }

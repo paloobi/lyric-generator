@@ -4,33 +4,37 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-5 col-sm-offset-2">
-				<!-- <div class="spacer"> -->
 			<h1>Robotic Poetry</h1>
-			<div id="lyric-box">
+			<div id="lyric-box" class="box">
 				{% if poem %}
 					<div id="poem-wrapper">
 					{% for line in poem %}
-						<p>{{line}}</p>
+						<p>{{line}},</p>
 					{% endfor %}
 					</div>
 				{% endif %}
 			</div>
-			<div class="row">
+
+			<div class="row controller">
 
 			<form action="/generate" method="POST">
-				<div class="col-sm-4">
-					<input type="submit" value="Generate" class="btn btn-danger pull-left">
-				</div>
-				<div class="col-sm-4">
-					<div class="lines"> 
-						<label for="numLines">Lines: </label> <input type="text" name="numLines" value="12">
+
+				<div>
+					<div class="lines col-sm-6 col-md-6"> 
+						<label for="numLines">How many lines? </label> <input type="text" name="numLines" value="12">
 					</div>
 				</div>
+
+				<div class="col-sm-3 col-md-3">
+					<input type="submit" value="Generate" class="btn btn-danger pull-left">
+				</div>
+
 			</form>
 			
-			<div class="col-sm-4">
+			<div class="col-sm-3 col-md-3">
 				<button name="save" id="saveBtn"class="btn btn-danger pull-right">Save</button>
 			</div>
+
 		</div>
 	</div>
 	<div class="col-sm-1 col-sm-offset-4">

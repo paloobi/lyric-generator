@@ -4,14 +4,13 @@ body {
 }
 
 #lyric-box {
-	background-color: #ff4dff;
 	font-size: 20px;
 	height:70vh;
 	width:100%;
-	border-radius:16px;
-	border:4px solid black;
 	font-family: 'Scheherazade', serif;
 	line-height: 1;
+	overflow: scroll;
+	margin-bottom: 12px;
 }
 
 #poem-wrapper {
@@ -41,10 +40,7 @@ h3{
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
-}
-
-.lines {
-padding-top: 10px;
+	padding: 20px;
 }
 
 button{
@@ -68,4 +64,70 @@ button{
 	background-color:black;
 	border-radius: 10px;
 	font-size:24px;
+}
+
+div#content {
+	padding: 10px;
+	background-color: #ffccff;
+	border-radius: 5px;
+}
+
+div.box {
+	width: 50%;	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	background-color: #ffccff;
+	border-radius: 12px;
+}
+
+h1:nth-child(2) {
+    display: none;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h1.about {
+	margin-bottom: 24px;
+}
+
+form {
+	margin: 0;
+}
+
+.btn-danger:hover {
+	background-color: violet;
+	border-color: violet;
+	color: black;
+}
+
+.btn-danger {
+	font-family: sans-serif;
+	font-size: 20px;
+	border: none;
+}
+
+.lines input {
+	width: 40px;
+	border-radius: 5px;
+}
+
+label {
+	color: white;
+	font-family: sans-serif;
+	margin-top: 10px;
+	margin-right: 20%;
+}
+
+.controller {
+	border-radius: 12px;
+	padding: 20px;
+}
+
+.lines {
+	background-color: purple;
+	height:40px;
+	border-radius: 12px
 }

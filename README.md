@@ -1,4 +1,4 @@
-## Pretentious Lyrics Generator
+# Pretentious Lyrics Generator
 
 Generate semi-nonsensical pretentious lyrics for the next hit indie song!
 
@@ -15,12 +15,12 @@ Proceed to use the beautiful lyrics to produce amazing music.
 
 This project was built by [Alex Polubiec](http://www.github.com/paloobi) and [Gus Erickson](http://www.github.com/gerickson808) for the [Monthly Music Hackathon](http://www.monthlymusichackathon.org) on the topic: Lyrics & Language.
 
-###Features
+## Features
 
 - Generate up to 50 lines of lyrics at a time
 - With millions of possible lyrics, some of which only half make sense, it should definitely produce some very unique lyrics!
 
-###Example Lyrics
+## Example Lyrics
 
 Some example lyrics produced by the generator:
 
@@ -29,23 +29,23 @@ Some example lyrics produced by the generator:
   * My ungardened job printer devitrifying my mother
   * Least subliminal Romania bottle me
 
-###Dependencies
+## Dependencies
 
 Install all of the Pretentious Lyrics Generator dependencies by running:
 
     npm install
 
-###Contribute
+## Contribute
 
 - [Issue Tracker](http://www.github.com/paloobi/lyric-generator/issues)
 - [Source Code](http://github.com/paloobi/lyric-generator)
 
-###Support
+## Support
 
 If you are having issues, please let us know!
 Just send an email to [Alex](mailto:alexandra.polubiec@gmail.com)
 
-##License & Attribution
+## License & Attribution
 
 This project is totally open source, feel free to use it.
 

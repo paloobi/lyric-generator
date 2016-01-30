@@ -9,16 +9,18 @@
 			<div id="lyric-box">{% block poem %}{% endblock %}</div>
 
 			<div class="row">
-			<div class="col-sm-4">
-				<button name="generate" class="btn btn-danger pull-left">Generate</button>
-			</div>
-			<div class="col-sm-4">
-				<div class="lines"> 
-					<label for="numLines">Lines: </label> <input type="text" class="form-control" id="numLines" placeholder="12">
+			<form action="/generate" method="POST">
+				<div class="col-sm-4">
+					<input type="submit" value="Generate" class="btn btn-danger pull-left">
+				</div>
+				<div class="col-sm-4">
+					<div class="lines"> 
+						<label for="numLines">Lines: </label> <input type="text" name="numLines" value="12">
 					</div>
-			</div>
+				</div>
+			</form>
 			<div class="col-sm-4">
-				<button name="save" class="btn btn-danger pull-right">Save</button>
+				<button name="save" id="saveBtn"class="btn btn-danger pull-right">Save</button>
 			</div>
 		</div>
 	</div>
@@ -26,4 +28,5 @@
 		<a href="/about"><h3>About</h3></a>
 	</div>
 </div>
+<script src="../public/main.js"></script>
 {% endblock %}

@@ -5,7 +5,7 @@ var marked = require('marked');
 var path = require('path');
 
 router.get('/', function(req, res){
-	res.render('index');
+	res.render('index', {value: 12});
 });
 
 router.get('/about', function(req, res){
@@ -23,7 +23,7 @@ var poem;
 router.post('/generate', function(req, res, next) {
   var numLines = req.body.numLines;
 	poem = getPoem(numLines);
-  res.render('index',{poem:poem});
+  res.render('index',{poem:poem, value: numLines});
 });
 
 router.post('/save',function(req,res,next){

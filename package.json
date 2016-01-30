@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/paloobi/lyric-generator#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "swig": "^1.4.2"
   }
 }

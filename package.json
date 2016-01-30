@@ -20,6 +20,7 @@
   "dependencies": {
     "body-parser": "^1.14.2",
     "express": "^4.13.4",
+    "marked": "^0.3.5",
     "swig": "^1.4.2"
   }
 }

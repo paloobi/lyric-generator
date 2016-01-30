@@ -112,16 +112,22 @@ form {
 .lines input {
 	width: 40px;
 	border-radius: 5px;
-	margin-top: 10px;
 }
 
 label {
-	color: black;
+	color: white;
 	font-family: sans-serif;
-	margin-top: 12px;
+	margin-top: 10px;
+	margin-right: 20%;
 }
 
 .controller {
 	border-radius: 12px;
 	padding: 20px;
+}
+
+.lines {
+	background-color: purple;
+	height:40px;
+	border-radius: 12px
 }

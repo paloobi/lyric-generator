@@ -19,5 +19,7 @@ h1{
 }
 
 button{
-
+	background-color:black;
+	font-color:white;
+	font-family: 'Brush Script MT', cursive;
 }

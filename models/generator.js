@@ -13,7 +13,6 @@ function getWord(type) {
   }
   return word;
 }
-
 var phrasePatterns = [
   ["D","A", "N", "t", "me"],
   ["D", "A", "h", "t", 'obj', "v" ],
@@ -25,7 +24,9 @@ var phrasePatterns = [
   ['v','obj','i','P','D','A','N'],
   ['obj',"V","v"],
   ['ex','obj'],
-  ['obj','t', 'obj']
+  ['obj','t', 'obj'],
+  ['v', 'obj','v','N'],
+  ['v','obj']
 ];
 
 function getRandomPattern() {

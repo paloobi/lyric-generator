@@ -15,10 +15,14 @@ router.get('/about', function(req, res){
 	});
 });
 
+router.get("/poem", function(req, res){
+ res.render('poem');
+});
+
 router.post('/generate', function(req, res, next) {
   var poem = getPoem(3);
   console.log(poem);
-  res.send(poem);
+  res.render('poem',{poem:poem});
 });
 
 module.exports = router;

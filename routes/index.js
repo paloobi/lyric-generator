@@ -5,7 +5,7 @@ var marked = require('marked');
 var path = require('path');
 
 router.get('/', function(req, res){
-	res.render('index', {value: 12});
+	res.render('index');
 });
 
 router.get('/about', function(req, res){
@@ -23,12 +23,13 @@ var poem;
 router.post('/generate', function(req, res, next) {
   var numLines = req.body.numLines;
 	poem = getPoem(numLines);
-  res.render('index',{poem:poem, value: numLines});
+  res.render('index',{poem:poem});
 });
 
 router.post('/save',function(req,res,next){
 	console.log(poem);
 	fs.writeFile(path.join(__dirname,'../public/','./poem.txt'),poem.join(', '));
+	res.setHeader('Content-disposition', 'attachment; filename=dramaticpenguin.MOV');
 	res.sendFile(path.join(__dirname,'../public/','./poem.txt'));
 });
 module.exports = router;

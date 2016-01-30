@@ -1,0 +1,22 @@
+{
+  "name": "lyric-generator",
+  "version": "1.0.0",
+  "description": "A lyric/poem generator that creates meaningless, well-structured sentences.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paloobi/lyric-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paloobi/lyric-generator/issues"
+  },
+  "homepage": "https://github.com/paloobi/lyric-generator#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

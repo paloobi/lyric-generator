@@ -2,6 +2,7 @@ var router = require('express').Router();
 var getPoem = require('../models/generator').getPoem;
 var fs = require('fs');
 var marked = require('marked');
+var path = require('path');
 
 router.get('/', function(req, res){
 	res.render('index');
@@ -18,11 +19,16 @@ router.get('/about', function(req, res){
 // router.get("/poem", function(req, res){
 //  res.render('poem');
 // });
-
+var poem;
 router.post('/generate', function(req, res, next) {
   var numLines = req.body.numLines;
-  var poem = getPoem(numLines);
+	poem = getPoem(numLines);
   res.render('index',{poem:poem});
 });
 
+router.post('/save',function(req,res,next){
+	console.log(poem);
+	fs.writeFile(path.join(__dirname,'../public/','./poem.txt'),poem.join(', '));
+	res.sendFile(path.join(__dirname,'../public/','./poem.txt'));
+});
 module.exports = router;

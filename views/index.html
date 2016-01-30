@@ -3,11 +3,23 @@
 {% block content %}
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-5 col-md-offset-2">
+		<div class="col-sm-5 col-sm-offset-2">
+				<!-- <div class="spacer"> -->
 			<h1>Robotic Poetry</h1>
-			<div id="lyric-box"></div>
-			<button name="generate" class="btn btn-danger pull-left">Generate</button>
-			<button name="save" class="btn btn-danger pull-right">Save</button>
+			<div id="lyric-box">{% block poem %}{% endblock %}</div>
+
+			<div class="row">
+			<div class="col-sm-4">
+				<button name="generate" class="btn btn-danger pull-left">Generate</button>
+			</div>
+			<div class="col-sm-4">
+				<div class="lines"> 
+					<label for="numLines">Lines: </label> <input type="text" class="form-control" id="numLines" placeholder="12">
+					</div>
+			</div>
+			<div class="col-sm-4">
+				<button name="save" class="btn btn-danger pull-right">Save</button>
+			</div>
 		</div>
 	</div>
 </div>

@@ -5,7 +5,8 @@ router.get('/', function(req, res, next){
 });
 
 router.post('/generate', function(req, res, next) {
-
+  req.body.lines;
+  res.send();
 });
 
 module.exports = router;

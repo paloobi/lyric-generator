@@ -43,10 +43,6 @@ h3{
 	padding: 20px;
 }
 
-.lines {
-padding-top: 10px;
-}
-
 button{
 	font-family: 'Brush Script MT', cursive;
 	width: 100%;
@@ -109,4 +105,16 @@ form {
 .btn-danger {
 	font-family: sans-serif;
 	font-size: 20px;
+}
+
+.lines input {
+	width: 40px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+label {
+	color: black;
+	font-family: sans-serif;
+	margin-top: 12px;
 }

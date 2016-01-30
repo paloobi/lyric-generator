@@ -21,8 +21,8 @@ router.get("/poem", function(req, res){
 
 router.post('/generate', function(req, res, next) {
   var poem = getPoem(3);
-  console.log(poem);
   res.render('poem',{poem:poem});
+
 });
 
 module.exports = router;

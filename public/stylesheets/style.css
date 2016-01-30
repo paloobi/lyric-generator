@@ -18,6 +18,18 @@ h1{
 	line-height: 26.4px;
 }
 
+a {
+	color:black;
+}
+h3{
+	font-family: 'Brush Script MT', cursive;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
 .lines {
 padding-top: 10px;
 }

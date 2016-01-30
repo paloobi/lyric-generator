@@ -6,7 +6,15 @@
 		<div class="col-sm-5 col-sm-offset-2">
 				<!-- <div class="spacer"> -->
 			<h1>Robotic Poetry</h1>
-			<div id="lyric-box">{% block poem %}{% endblock %}</div>
+			<div id="lyric-box">
+				{% if poem %}
+					<div id="poem-wrapper">
+					{% for line in poem %}
+						<p>{{line}}</p>
+					{% endfor %}
+					</div>
+				{% endif %}
+			</div>
 
 			<div class="row">
 

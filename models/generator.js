@@ -1,7 +1,6 @@
 var words = require('./words');
 
 function getWord(type) {
-  console.log('type is', type);
   if (type === 'me' || type === 'you') {
     return type;
   }

@@ -4,6 +4,7 @@
   "description": "A lyric/poem generator that creates meaningless, well-structured sentences.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

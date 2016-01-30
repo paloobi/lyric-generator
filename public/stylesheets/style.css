@@ -4,7 +4,7 @@ body {
 
 #lyric-box {
 	height:70vh;
-	width:80%;
+	width:100%;
 	border-radius:16px;
 	border:4px solid black;
 }
@@ -19,7 +19,15 @@ h1{
 }
 
 button{
-	background-color:black;
-	font-color:white;
 	font-family: 'Brush Script MT', cursive;
+	
+	width: 35%;
+	height:2em;
+
+}
+
+.btn-danger{
+	background-color:black;
+	border-radius: 10px;
+	font-size:24px;
 }

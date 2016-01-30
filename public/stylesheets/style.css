@@ -5,11 +5,13 @@ body {
 
 #lyric-box {
 	background-color: #ff4dff;
-	font-size: 24px;
+	font-size: 20px;
 	height:70vh;
 	width:100%;
 	border-radius:16px;
 	border:4px solid black;
+	font-family: 'Scheherazade', serif;
+	line-height: 1;
 }
 
 #poem-wrapper {
@@ -31,6 +33,7 @@ h1{
 a {
 	color:black;
 }
+
 h3{
 	font-family: 'Brush Script MT', cursive;
 	font-size: 24px;

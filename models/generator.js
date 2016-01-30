@@ -21,8 +21,10 @@ var phrasePatterns = [
   ["t", "me"],
   ["i", "you"],
   ["you", "t", "D", "h"],
-  ["ex", "ex"]
-]
+  ["ex", "ex"],
+  ['v','obj','i','P','D','A','N'],
+  ['obj',"V","A"]
+];
 
 function getRandomPattern() {
   var max = phrasePatterns.length;

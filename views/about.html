@@ -1,8 +1,11 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>About</h1>
+<div id="content">
 
-{% autoescape false %}{{readMe}}{% endautoescape %}
+  <h1 class="about">About</h1>
 
+  {% autoescape false %}{{readMe}}{% endautoescape %}
+
+</div>
 {% endblock %}

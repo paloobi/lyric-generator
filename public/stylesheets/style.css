@@ -12,6 +12,7 @@ body {
 	border:4px solid black;
 	font-family: 'Scheherazade', serif;
 	line-height: 1;
+	overflow: scroll;
 }
 
 #poem-wrapper {
@@ -41,6 +42,7 @@ h3{
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+	padding: 20px;
 }
 
 .lines {
@@ -68,4 +70,26 @@ button{
 	background-color:black;
 	border-radius: 10px;
 	font-size:24px;
+}
+
+div#content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding: 10px;
+	background-color: #ffccff;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+h1:nth-child(2) {
+    display: none;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h1.about {
+	margin-bottom: 24px;
 }

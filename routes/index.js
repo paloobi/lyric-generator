@@ -20,9 +20,9 @@ router.get("/poem", function(req, res){
 });
 
 router.post('/generate', function(req, res, next) {
-  var poem = getPoem(3);
+  var numLines = req.body.numLines;
+  var poem = getPoem(numLines);
   res.render('poem',{poem:poem});
-
 });
 
 module.exports = router;

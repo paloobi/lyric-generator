@@ -16,14 +16,14 @@ function getWord(type) {
 
 var phrasePatterns = [
   ["D","A", "N", "t", "me"],
-  ["D", "A", "h", "t", 'obj', "A" ],
+  ["D", "A", "h", "t", 'obj', "v" ],
   ["D", "A", "N", "i", "obj"],
   ["t", "me"],
   ["i", "you"],
   ["you", "t", "D", "h"],
   ["ex", "ex"],
   ['v','obj','i','P','D','A','N'],
-  ['obj',"V","A"],
+  ['obj',"V","v"],
   ['ex','obj'],
   ['obj','t', 'obj']
 ];

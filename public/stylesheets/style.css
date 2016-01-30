@@ -1,0 +1,23 @@
+body {
+	background-color: #ff00ff;
+}
+
+#lyric-box {
+	height:70vh;
+	width:80%;
+	border-radius:16px;
+	border:4px solid black;
+}
+
+h1{
+	font-family: 'Brush Script MT', cursive;
+	font-size: 48px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+button{
+
+}

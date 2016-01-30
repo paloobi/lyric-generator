@@ -16,14 +16,11 @@ router.get('/about', function(req, res){
 	});
 });
 
-// router.get("/poem", function(req, res){
-//  res.render('poem');
-// });
 var poem;
 router.post('/generate', function(req, res, next) {
   var numLines = req.body.numLines;
 	poem = getPoem(numLines);
-  res.render('index',{poem:poem});
+  res.render('index',{poem:poem, value: numLines});
 });
 
 router.post('/lyrics.txt',function(req,res,next){

@@ -32,7 +32,6 @@ router.post('/lyrics.txt',function(req,res,next){
 		res.sendFile(path.join(__dirname,'../public/lyrics'), function(err) {
 	  	if (err) throw err;
 		});
-
 	});
 
 });

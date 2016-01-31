@@ -45,10 +45,8 @@ Install all of the Pretentious Lyrics Generator dependencies by running:
 If you are having issues, please let us know!
 Just send an email to [Alex](mailto:alexandra.polubiec@gmail.com)
 
-## License & Attribution
+## Attribution
 
-This project is totally open source, feel free to use it.
-
-The words and parts of speech come from [Moby Part-of-Speech](http://icon.shef.ac.uk/Moby/mpos.html)
+The words and parts of speech come from [Moby Project - Part-of-Speech](http://icon.shef.ac.uk/Moby/mpos.html), created by Grady Ward.
 
 

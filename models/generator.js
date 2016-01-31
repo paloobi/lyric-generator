@@ -8,25 +8,27 @@ function getWord(type) {
   var min = 0;
   var idx = Math.floor(Math.random() * (max - min)) + min;
   var word = words[type][idx];
-  if (type === "!") {
+  if (type === "ex") {
     word += "!";
   }
   return word;
 }
 var phrasePatterns = [
-  ["D","A", "N", "t", "me"],
-  ["D", "A", "h", "t", 'obj', "v" ],
-  ["D", "A", "N", "i", "obj"],
+  ["D","A", "N", "t", "obj"],
+  ["D", "A", "h", "t", 'obj'],
+  ["D", "A", "N", "i"],
   ["t", "me"],
-  ["i", "you"],
+  ["you", "i"],
   ["you", "t", "D", "h"],
   ["ex", "ex"],
-  ['v','obj','i','P','D','A','N'],
-  ['obj',"V","v"],
+  ['t','obj','t','P'],
+  ['D','A','N'],
+  ["V",'N',"v"],
   ['ex','obj'],
-  ['obj','t', 'obj'],
-  ['v', 'obj','v','N'],
-  ['v','obj']
+  ['N','t', 'obj'],
+  ['t', 'obj','V','h'],
+  ['v', 'V','obj'],
+  ['V', 'obj', 'C', 'obj']
 ];
 
 function getRandomPattern() {

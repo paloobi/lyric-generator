@@ -2,7 +2,7 @@ node_modules
 notes.txt
 .DS_Store
 */DS_Store
-./public/stylesheets/poem.md
-./public/stylesheets/poem.txt
-./data-source
-./public/lyrics
+/public/stylesheets/poem.md
+/public/stylesheets/poem.txt
+/data-source
+/public/lyrics*

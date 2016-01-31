@@ -30,10 +30,7 @@ router.post('/lyrics.txt',function(req,res,next){
 	fs.writeFile(path.join(__dirname,'../public/lyrics'), poem.join(',\n').slice(0, -2), function(err, file) {
 		if (err) throw err;
 		res.sendFile(path.join(__dirname,'../public/lyrics'), function(err) {
-			fs.unlink('../public/lyrics', function(err) {
-	  		if (err) throw err;
-	  		console.log('successfully deleted poem');
-			});
+	  	if (err) throw err;
 		});
 
 	});

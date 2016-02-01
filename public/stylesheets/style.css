@@ -9,7 +9,7 @@ body {
 	width:100%;
 	font-family: 'Scheherazade', serif;
 	line-height: 1;
-	overflow: scroll;
+	overflow: auto;
 	margin-bottom: 12px;
 }
 

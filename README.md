@@ -1,6 +1,8 @@
-# Pretentious Lyrics Generator
+# Robotic Peotry
 
-Generate semi-nonsensical pretentious lyrics for the next hit indie song!
+An express app that generates semi-nonsensical pretentious lyrics for the next hit indie song!
+
+This project is hosted [here](http://robotic-poetry.herokuapp.com/)
 
 Look how easy it is to use:
 
